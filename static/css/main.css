@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.card {
+	background-color: #fff;
+	width: 125px;
+	height: 200px;
+	border: solid #000 3px;
+	float: left;
+	margin: 20px;
+	border-radius: 15px;
+	background-image: url("http://facweb.cs.depaul.edu/sgrais/images/Cards/Anglo-American_card_suits.png");
+	background-size: 100% 100%;
+}
+
+.lineWrapper {
+	clear: both;
+	width: auto;
+}
+
+.table {
+	display: table;
+	margin: 0 auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
