@@ -15,7 +15,16 @@ body {
 	background-size: 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	transition: box-shadow linear 0.1s, border-color linear 0.1s;
+	transform-origin: 50% 50%;
+	transform: rotateY(0deg);
+	transition: box-shadow linear 0.1s, border-color linear 0.1s, transform linear 0.5s;
+	-webkit-transform: rotateY(0deg);
+	-webkit-transition: -webkit-transform linear 0.5s;
+}
+
+.rotate90 {
+	transform: rotateY(90deg);
+	-webkit-transform: rotateY(90deg);
 }
 
 .lineWrapper {

@@ -1,5 +1,3 @@
-console.log("Hello world");
-
 $(document).ready(function() {
 
 	var cardHistory = {};
@@ -76,11 +74,15 @@ $(document).ready(function() {
 					}
 				}
 			}
-			console.log(isSet);
 			if (isSet) {
 				$(".card.selected").each(function() {
-					setCard($(this), getUniqueCardID(), true);
-				})
+					var item = $(this);
+					$(this).addClass("rotate90");
+					setTimeout(function() {
+						setCard(item, getUniqueCardID(), true);
+						item.removeClass("rotate90");
+					}, 500);
+				});
 				score++;
 				scoreUpdate();
 				showMessage("Nice!");
